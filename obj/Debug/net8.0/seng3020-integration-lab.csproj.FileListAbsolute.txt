@@ -96,3 +96,4 @@
 /home/rob/Projects/seng3020-integration-lab/obj/Debug/net8.0/seng3020-integration-lab.pdb
 /home/rob/Projects/seng3020-integration-lab/obj/Debug/net8.0/seng3020-integration-lab.genruntimeconfig.cache
 /home/rob/Projects/seng3020-integration-lab/obj/Debug/net8.0/ref/seng3020-integration-lab.dll
+/home/rob/Projects/seng3020-integration-lab/obj/Debug/net8.0/seng3020-integration-lab.sourcelink.json

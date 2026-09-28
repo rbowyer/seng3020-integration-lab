@@ -18,28 +18,29 @@ public class DogApiTests
     }
 
     [Test]
-    public async Task GetRandomDog_ReturnsSuccessStatusCode()
+    public async Task Get_ReturnsSuccessStatusCode()
     {
         var response = await _client.GetAsync($"{BaseUrl}/breeds/image/random");
         Assert.That(response.IsSuccessStatusCode, Is.True);
     }
 
     [Test]
-public async Task GetRandomDog_ResponseContainsImageUrl()
-{
-    var response = await _client.GetAsync($"{BaseUrl}/breeds/image/random");
-    var json = await response.Content.ReadAsStringAsync();
-    var result = System.Text.Json.JsonSerializer.Deserialize<DogApiResponse>(json, 
-        new System.Text.Json.JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+    public async Task GetRandomDog_ResponseContainsImageUrl()
+    {
+        var response = await _client.GetAsync($"{BaseUrl}/breeds/image/random");
+        var json = await response.Content.ReadAsStringAsync();
+        var result = System.Text.Json.JsonSerializer.Deserialize<DogApiResponse>(json,
+            new System.Text.Json.JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 
-    Assert.Multiple(() =>
-{
-    Assert.That(result, Is.Not.Null);
-    Assert.That(result?.Status, Is.EqualTo("success"));
-    Assert.That(result?.Message, Does.StartWith("https://"));
-});
+        Assert.Multiple(() =>
+        {
+            Assert.That(result, Is.Not.Null);
+            Assert.That(result?.Status, Is.EqualTo("success"));
+            Assert.That(result?.Message, Does.StartWith("https://"));
+        });
+    }
 }
-}
+
 public class DogApiResponse
 {
     public string? Message { get; set; }

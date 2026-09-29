@@ -54,6 +54,7 @@ public class DogApiTests
             Assert.That(result?.Status, Is.EqualTo("success"));
             Assert.That(result?.Message, Is.Not.Empty);
             Assert.That(result?.Message?[0], Does.StartWith("https://"));
+            Assert.That(result?.Message, Has.Some.Contains("beagle"));
         });
     }
 }

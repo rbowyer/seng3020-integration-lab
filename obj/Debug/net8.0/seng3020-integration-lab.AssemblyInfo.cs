@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("seng3020-integration-lab")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a410119f81f5e76ee01629dbd7b8ed21edc2cee4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21278ab2905492a4f96b32340f9b8e172aa9aee5")]
 [assembly: System.Reflection.AssemblyProductAttribute("seng3020-integration-lab")]
 [assembly: System.Reflection.AssemblyTitleAttribute("seng3020-integration-lab")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
